@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="ex003.css">
+	<title>Exercícios de JavaScript</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<a class="frase-bar" href="index.html">Exercício 003</a>
+
+			<nav id="navegacao" class="navegacao">
+				<button id="botao-mobile" class="menu-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">&#9776;</button>
+
+				<ul class="menu" role="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="../ex001/index.html">Ex001</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex002/index.html">Ex002</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="index.html">Ex003</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex004/index.html">Ex004</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex005/index.html">Ex005</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<section class="enunciado">
+				<h1 class="enunciado__titulo">Enunciado</h1>
+
+				<p class="enunciado__paragrafo">
+					O cardápio de uma lanchonete é o seguinte:
+				</p>
+
+					<table class="tabela">
+						<thead class="tabela__head">
+							<tr class="tabela__linha">
+								<th class="tabela__dado">Especificação</th>
+								<th class="tabela__dado">Código</th>
+								<th class="tabela__dado">Preço</th>
+							</tr>
+						</thead>
+
+						<tbody class="tabela__body">
+							<!-- Gerando tabela via JavaScript -->
+						</tbody>
+					</table>
+
+				<p class="enunciado__paragrafo">
+					Escrever um programa em Javascript que leia o código do item pedido, a quantidade e calcule o <strong>valor a ser pago</strong> por aquele lanche. Considere que a cada execução somente será calculado um item.
+					<br>
+					OBS: Deve-se criar os &lt;inputs&gt; para lê os valores do código do item e a quantidade. O resultado deve ser exibido na própria página.
+				</p>
+			</section>
+
+			<section class="entrada">
+				<h2 class="entrada__titulo">Entrada</h2>
+
+				<form class="formulario">
+					<label class="formulario__label">Digite o código do item e a quantidade:</label>
+
+					<br>
+					<br>
+
+					<label class="formulario__codigo">
+						Código:
+						<input class="formulario__input" type="number" placeholder="Digite o código do item" required>
+						<p id="codigo-invalido" class="formulario_invalido"></p>
+					</label>
+
+					<br>
+
+					<label class="formulario__quantidade">
+						Quantidade:
+						<input class="formulario__input" type="number" placeholder="Digite a quantidade" required>
+						<p id="quantidade-invalida" class="formulario_invalido"></p>
+					</label>
+
+					<br>
+
+					<button id="btn-calcular" class="formulario__botao" type="button">Calcular</button>
+				</form>
+			</section>
+
+			<section class="resposta">
+				<h2 class="resposta__titulo">Resposta</h2>
+
+				<p class="resposta__paragrafo"></p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<p class=".footer__paragrafo">
+				Desenvolvido por <strong>Júlio Evêncio</strong> para a disciplina de <em>Linguagem de Programação para Web</em> do curso de SI do IFMA - 2022
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../script/script.js"></script>
+	<script type="text/javascript" src="ex003.js"></script>
+</body>
+</html>
