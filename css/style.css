@@ -99,6 +99,11 @@ button:hover {
 	cursor: pointer;
 }
 
+input {
+	background-color: var(--cor1);
+	color: var(--cor5);
+}
+
 table {
 	margin: 30px;
 }
