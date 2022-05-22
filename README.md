@@ -2,7 +2,7 @@
 ## Informações
 Este projeto/site foi feito para a disciplina "Linguagem de Programação para Web" do curso de SI do IFMA
 
-## Ferramentas:
+## Ferramentas
 - :pushpin: HTML5
 - :pushpin: CSS3
 - :pushpin: JavaScript
