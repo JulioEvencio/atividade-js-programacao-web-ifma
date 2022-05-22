@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="ex001.css">
 	<title>Atividade 04</title>
 </head>
 <body>
@@ -42,7 +43,38 @@
 	</header>
 
 	<main class="main">
-		<div class="container"></div>
+		<div class="container">
+			<section class="enunciado">
+				<h1 class="enunciado__titulo">Enunciado</h1>
+
+				<p class="enunciado__paragrafo">
+					Faça um programa que entre com cinco números e imprima o quadrado de cada número.
+					<br>
+					<em class="enunciado__enfase">Dica: Use recursos de programação funcional</em>
+				</p>
+			</section>
+
+			<section class="entrada">
+				<h2 class="entrada__titulo">Entrada</h2>
+
+				<form class="formulario">
+					<label class="formulario__label">Informe 5 números</label> <br>
+					<input class="formulario__input" type="number" placeholder="Digite um número" required> <br>
+					<input class="formulario__input" type="number" placeholder="Digite um número" required> <br>
+					<input class="formulario__input" type="number" placeholder="Digite um número" required> <br>
+					<input class="formulario__input" type="number" placeholder="Digite um número" required> <br>
+					<input class="formulario__input" type="number" placeholder="Digite um número" required> <br>
+
+					<button id="btn-calcular" class="formulario__botao" type="button">Calcular</button>
+				</form>
+			</section>
+
+			<section class="resposta">
+				<h2 class="resposta__titulo">Resposta</h2>
+
+				<ul id="ul-resposta"></ul>
+			</section>
+		</div>
 	</main>
 
 	<footer class="footer">
@@ -54,5 +86,6 @@
 	</footer>
 
 	<script type="text/javascript" src="../script/script.js"></script>
+	<script type="text/javascript" src="ex001.js"></script>
 </body>
 </html>
