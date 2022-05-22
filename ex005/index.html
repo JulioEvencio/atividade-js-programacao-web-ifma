@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="ex005.css">
+	<title>Exercícios de JavaScript</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<a class="frase-bar" href="index.html">Exercício 005</a>
+
+			<nav id="navegacao" class="navegacao">
+				<button id="botao-mobile" class="menu-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">&#9776;</button>
+
+				<ul class="menu" role="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="../ex001/index.html">Ex001</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex002/index.html">Ex002</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex003/index.html">Ex003</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="../ex004/index.html">Ex004</a>
+					</li>
+
+					<li class="menu__item">
+						<a class="menu__link" href="index.html">Ex005</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<section class="enunciado">
+				<h1 class="enunciado__titulo">Enunciado</h1>
+
+				<p class="enunciado__paragrafo">
+					Desenvolva o formulário com as seguintes ações a serem implementadas:
+				</p>
+
+				<img class="enunciado__img" src="../img/ex005.png">
+
+				<h2 class="enunciado__subtitulo">Funcionalidades</h2>
+				<p class="enunciado__paragrafo">
+					Funcionalidades ao clicar no botão [Calcular] deve ser gerada uma mensagem com as informações de nome do cliente, e qual a bebidas que ele consumiu e quais doces e salgados consumiu. Informar também o valor a pagar. Os produtos têm os seguintes valores: Suco (4.00), Refrigerante (2.50), Água (1.5), Bolo (3.50), Pastel (3.00) e Torta (4.00).
+				</p>
+			</section>
+
+			<section class="entrada">
+				<h2 class="entrada__titulo">Entrada</h2>
+
+				<form class="formulario">
+					<fieldset>
+						<legend>Lanchonete do IFMA</legend>
+
+						<div class="formulario__nome">
+							<label>
+								Nome do Cliente:
+								<input class="formulario__input" type="text" placeholder="Nomde do Cliente" required>
+							</label>
+						</div>
+
+						<br>
+
+						<div class="formulario__bebidas">
+							Bebidas:
+							<br>
+							<label>
+								<input class="formulario__input" type="radio" name="bebida" value="suco" required>
+								Suco
+							</label>
+
+							<label>
+								<input class="formulario__input" type="radio" name="bebida" value="refrigerante" required>
+								Refrigerante
+							</label>
+
+							<label>
+								<input class="formulario__input" type="radio" name="bebida" value="água" required>
+								Água
+							</label>
+						</div>
+
+						<br>
+
+						<div class="formulario__comida">
+							Doces e Salgados:
+							<br>
+							<label>
+								<input class="formulario__input" type="checkbox" value="bolo" required>
+								Bolo
+							</label>
+
+							<label>
+								<input class="formulario__input" type="checkbox" value="pastel" required>
+								Pastel
+							</label>
+
+							<label>
+								<input class="formulario__input" type="checkbox" value="torta" required>
+								Torta
+							</label>
+						</div>
+
+						<br>
+
+						<button id="btn-calcular" class="formulario__botao" type="button">Calcular</button>
+						<button id="btn-limpar" class="formulario__botao" type="button">Limpar</button>
+					</fieldset>
+				</form>
+			</section>
+
+			<section class="resposta">
+				<h2 class="resposta__titulo">Resposta</h2>
+
+				<p class="resposta__paragrafo"></p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<p class=".footer__paragrafo">
+				Desenvolvido por <strong>Júlio Evêncio</strong> para a disciplina de <em>Linguagem de Programação para Web</em> do curso de SI do IFMA - 2022
+			</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="../script/script.js"></script>
+	<script type="text/javascript" src="ex005.js"></script>
+</body>
+</html>

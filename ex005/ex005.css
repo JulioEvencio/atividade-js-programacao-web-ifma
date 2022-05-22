@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.enunciado__img {
+	margin: 30px 0px;
+	width: 100%;
+	max-width: 295px;
+}
+
+.formulario__input {
+	margin-top: 5px;
+}
+
+.formulario__botao {
+	margin-top: 10px;
+}
