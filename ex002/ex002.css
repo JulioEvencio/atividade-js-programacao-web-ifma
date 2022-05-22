@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.formulario__input {
+	margin-top: 5px;
+}
+
+.formulario__erro {
+	color: #f00;
+}
+
+.formulario__botao {
+	margin-top: 10px;
+}
