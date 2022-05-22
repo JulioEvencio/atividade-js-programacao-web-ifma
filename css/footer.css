@@ -1,0 +1,18 @@
+/*
+	Arquivo para o footer
+*/
+@charset "utf-8";
+
+.footer {
+	padding: 30px;
+	border-top: 1px solid var(--cor1);
+}
+
+.footer__container {
+	text-align: center;
+}
+
+.footer__paragrafo {
+	color: var(--branco);
+	padding: 10px;
+}

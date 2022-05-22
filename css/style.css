@@ -1,0 +1,133 @@
+/*
+	Arquivo para estilos gerais
+*/
+
+@charset "utf-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+    --cor1: #F2F2F2;
+    --cor2: #A4A4A4;
+    --cor3: #5A5A5A;
+    --cor4: #262626;
+    --cor5: #0C0C0C;
+
+    --fonte-titulo: serif;
+    --fonte-paragrafo: sans-serif;
+    --fonte-link: serif;
+    --fonte-botao: serif;
+
+    --container-max-width: 1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+main {
+	padding: 30px 0px;
+}
+
+section {
+	padding: 30px;
+	margin: 30px 0px;
+	border: 1px solid var(--cor1);
+}
+
+fieldset {
+	padding: 20px 20px;
+}
+
+h1, h2 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p {
+	font-family: var(--fonte-paragrafo);
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a {
+	color: var(--cor1);
+	font-family: var(--fonte-link);
+	font-size: 1em;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	background-color: var(--cor1);
+	color: var(--cor5);
+	font-family: var(--fonte-botao);
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+table {
+	margin: 30px;
+}
+
+table, th, td {
+	border: 1px solid var(--cor1);
+	padding: 5px;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    h3 {
+    	font-size: 1em;
+    }
+
+    p, a, button {
+        font-size: 0.9em;
+    }
+}
